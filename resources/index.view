@@ -1,0 +1,42 @@
+<svg class="background">
+  <defs>
+    <link rel="import" href="/mnt/sysassets/system_widget.defs" />
+    <link rel="import" href="/mnt/sysassets/widgets/icon_button.defs" />
+    <symbol id="progressBar">
+      <text id="progressBarLabel" x="0" text-length="200" />
+      <section x="27" width="100%-27">
+        <rect id="parent" width="100%" height="100%" fill="#804600" />
+        <rect id="progressBarDone" width="100%" height="100%" fill="#ff9800" />
+        <text id="progressBarText" text-length="400" x="50%" text-anchor="middle" />
+      </section>
+    </symbol>
+  </defs>
+  <svg class='header'>
+  </svg>
+
+  <rect id="functionsButton" pointer-events="visible" />
+  <svg id="pbSection" class="content" pointer-events="visible">
+    <use class="stack-gap mainPB" href="#progressBar" id="stepsPB" />
+    <use class="stack-gap mainPB" href="#progressBar" id="distancePB" />
+    <use class="stack-gap mainPB" href="#progressBar" id="caloriesPB" />
+    <use class="stack-gap mainPB" href="#progressBar" id="minsInActiveZonePB" />
+    <use class="stack-gap mainPB" href="#progressBar" id="elevationPB" />
+    <text class="stack-gap-after-rect leftInfo" id="heartLabel" />
+    <text class="stack-gap leftInfo" id="sleepLabel" />
+  </svg>
+
+  <text id="clockLabel" />
+  <text id="dateLabel" />
+
+  <rect id="functionsPanel" pointer-events="visible">
+    <use id="button-2" href="#icon-button" class="large-button application-fill plus-button" />
+
+    <rect id="functionsRect" pointer-events="visible" />
+    <circle id="torchCircle" />
+    <text id="torchLabel" pointer-events="visible">🔦</text>
+    <circle id="messageCircle" />
+    <text id="messageLabel" pointer-events="visible">✉</text>
+  </rect>
+
+  <rect id="torchRect" pointer-events="visible" />
+</svg>

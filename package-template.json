@@ -1,0 +1,34 @@
+{
+  "name": "my-first-clock",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies2": {
+    "@fitbit/sdk": "7.2.0-pre.0",
+    "@fitbit/sdk-cli": "1.8.0-pre.11"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "@SDK_VER@",
+    "@fitbit/sdk-cli": "@SDK_CLI_VER@"
+  },
+  "fitbit": {
+    "appUUID": "66df91a0-152a-481f-81a1-566b96e6bf08",
+    "appType": "clockface",
+    "appDisplayName": "My First Clock",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffffff",
+    "requestedPermissions": [
+      "access_heart_rate",
+      "access_activity"
+    ],
+    "buildTargets": [
+      "@BUILD_TARGETS@"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  }
+}

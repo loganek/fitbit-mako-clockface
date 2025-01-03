@@ -1,0 +1,105 @@
+.background {
+  viewport-fill: black;
+  fill: white;
+}
+
+.content {
+  x: 5%;
+  y: 12%;
+}
+
+.mainPB {
+  width: 35%;
+  height: 25;
+  font-size: 20;
+}
+
+#clockLabel {
+  y: 70%;
+  x: 140;
+  font-size: 80;
+  text-length: 150;
+}
+
+#dateLabel {
+  y: 83%;
+  x: 141;
+  /* text-anchor: end; */
+  fill: "gray";
+  text-length: 150;
+}
+
+#distanceLabel {
+  filter: grayscale(100%)
+}
+
+.stack-gap-after-rect {
+  y: $+25;
+}
+
+.leftInfo {
+  text-length: 70;
+  font-size: 20;
+}
+
+#functionsButton {
+  x: 80%;
+  y: 10%;
+  width: 20;
+  height: 20;
+  fill: "red";
+}
+
+#functionsPanel {
+  opacity: 0.1;
+  display: "none";
+  width: 100%;
+  height: 100%;
+  x: 0;
+  y: 0;
+}
+
+#functionsRect {
+  fill: #444444;
+  rx: 10;
+  ry: 10;
+  width:70%;
+  height: 70%;
+  x: 15%;
+  y: 15%;
+}
+
+#torchLabel {
+  x: 30%;
+  y: 50%;
+  text-anchor: middle;
+  display-align: center;
+}
+
+#torchCircle {
+  cx: 30%;
+  cy: 50%-10;
+  r: 25;
+  fill:white;
+}
+
+#messageCircle {
+  cx: 70%-1;
+  cy: 50%-10;
+  r: 25;
+  fill:white;
+}
+
+#messageLabel {
+  x: 70%;
+  y: 50%;
+  text-anchor: middle;
+  display-align: center;
+}
+
+#torchRect {
+  width: 100%;
+  height: 100%;
+  fill: white;
+  display: none;
+}
