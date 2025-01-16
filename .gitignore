@@ -1,5 +1,9 @@
-/node_modules
+node_modules
 /build
 package-lock.json
 package.json
 .current_destination
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
